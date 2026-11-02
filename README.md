@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.vivareal.com.br/imovel/apartamento-3-quartos-brooklin-zona-sul-sao-paulo-com-garagem-186m2-venda-RS3710000-id-2776423622/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -233,7 +233,7 @@ response = requests.get(
     params={
         "query": "S\u00e3o Paulo",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
